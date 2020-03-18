@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app_web" />
+        <module name="app_interface" />
+        <module name="app_common" />
+        <module name="app_registry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app_common" target="1.8" />
+      <module name="app_interface" target="1.8" />
+      <module name="app_registry" target="1.8" />
+      <module name="app_web" target="1.8" />
+      <module name="testDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app_common" options="-parameters" />
+      <module name="app_interface" options="-parameters" />
+      <module name="app_registry" options="-parameters" />
+      <module name="app_web" options="-parameters" />
+    </option>
+  </component>
+</project>

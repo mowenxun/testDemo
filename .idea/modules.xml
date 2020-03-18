@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app_common/app_common.iml" filepath="$PROJECT_DIR$/app_common/app_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_interface/app_interface.iml" filepath="$PROJECT_DIR$/app_interface/app_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_registry/app_registry.iml" filepath="$PROJECT_DIR$/app_registry/app_registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_web/app_web.iml" filepath="$PROJECT_DIR$/app_web/app_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/testDemo.iml" filepath="$PROJECT_DIR$/.idea/testDemo.iml" />
+    </modules>
+  </component>
+</project>
