@@ -11,5 +11,12 @@
 
     <artifactId>app_web</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.deepexi.test</groupId>
+            <artifactId>app-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
