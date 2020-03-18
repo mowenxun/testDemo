@@ -71,6 +71,7 @@ public class RedisConfig extends CachingConfigurerSupport {
         RedisStandaloneConfiguration standaloneConfig = new RedisStandaloneConfiguration(host, Integer.valueOf(port));
         RedisPassword redisPassword = RedisPassword.of(password);
         standaloneConfig.setPassword(redisPassword);
+        standaloneConfig.setDatabase(Integer.valueOf(environment.getProperty("spring.redis.db")));
         JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(standaloneConfig);
         return jedisConnectionFactory;
     }
