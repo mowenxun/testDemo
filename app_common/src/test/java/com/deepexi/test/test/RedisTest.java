@@ -19,6 +19,19 @@ public class RedisTest extends BasicTest {
     @Test
     public void existsKey() {
         boolean f = redisUtil.hasKey("12");
-        System.out.println("f=="+f);
+        System.out.println("f==" + f);
+    }
+
+    @Test
+    public void getSeqNo() {
+        String s = redisUtil.getSeqNoByRedis("meituan", 3);
+        System.out.println("s==" + s);
+        s = redisUtil.getSeqNoByRedis("meituan", 3);
+        System.out.println("s==" + s);
+        s = redisUtil.getSeqNoByRedis("eleme", 5);
+        System.out.println("s==" + s);
+        s = redisUtil.getSeqNoByRedis("eleme", 5);
+        System.out.println("s==" + s);
+
     }
 }
