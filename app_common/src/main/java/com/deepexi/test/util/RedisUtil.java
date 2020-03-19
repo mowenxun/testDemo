@@ -2,7 +2,7 @@ package com.deepexi.test.util;
 
 
 import com.deepexi.test.entity.Status;
-import org.apache.commons.lang3.time.FastDateFormat;
+import net.logstash.logback.encoder.org.apache.commons.lang3.time.FastDateFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
