@@ -4,6 +4,8 @@ import com.deepexi.test.util.RedisUtil;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.UUID;
+
 /**
  * @ClassName RedisTest
  * @Description: TODO
@@ -33,5 +35,21 @@ public class RedisTest extends BasicTest {
         s = redisUtil.getSeqNoByRedis("eleme", 5);
         System.out.println("s==" + s);
 
+    }
+
+    @Test
+    public void testLock() {
+        String key = "test:lock:key";
+        String requestId = UUID.randomUUID().toString().replaceAll("-", "");
+        int expireTime = 60 * 1000;//1s
+        if (redisUtil.tryGetDistributedLock(key, requestId, expireTime)) {
+            System.out.println("获得锁执行=========");
+            try {
+                Integer c = null;
+                int a = c / 133;
+            } catch (Exception e) {
+                redisUtil.releaseDistributedLock(key, requestId);
+            }
+        }
     }
 }
