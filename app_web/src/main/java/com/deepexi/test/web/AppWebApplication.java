@@ -3,6 +3,7 @@ package com.deepexi.test.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @ClassName AppWebApplication
@@ -12,7 +13,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @Version V1.0
  **/
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
+@EnableEurekaClient
 public class AppWebApplication {
     public static void main(String[] args) {
         try {
